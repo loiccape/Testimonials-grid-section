@@ -74,6 +74,8 @@ main {
 
 .box > :last-child{
     margin-top: 15px;
+    font-size: 13px;
+    width: 80%;
 }
 
 .daniel :last-child,
@@ -162,10 +164,10 @@ main {
     
     main{
         max-height: 572px;
-        width: 1110px;
+        max-width: 1110px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-row: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         gap: 10px;
     }
 
@@ -173,10 +175,12 @@ main {
 
     .daniel{
         grid-column: span 2;
+        grid-row: 1;
     }
     
     .jonathan{
         grid-column: 3/4;
+        grid-row: 1;
     }
 
     .kira{

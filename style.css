@@ -161,7 +161,7 @@ main {
     }
     
     main{
-        height: 572px;
+        max-height: 572px;
         width: 1110px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);

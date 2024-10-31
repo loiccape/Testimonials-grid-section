@@ -49,9 +49,8 @@ main {
 }
 
 .box {
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
-  height: fit-content;
 }
 
 .box :first-child{
@@ -70,11 +69,11 @@ main {
 .box > p:first-of-type{
     font-weight: var(--font-weight-semibold);
     font-size: 20px;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .box > :last-child{
-    margin-top: 40px;
+    margin-top: 15px;
 }
 
 .daniel :last-child,
@@ -118,13 +117,14 @@ main {
     width: 80%;
 }
 
-.jeanette >p:last-of-type{
-    width: 100%;
-}
 
 .daniel {
-    color: White;
-  background-color: var(--color-moderate-violet);
+    color: white;
+    background-color: #A775F1;
+    background-image: url('./images/bg-pattern-quotation.svg');
+ 
+    border-radius: 10px; /* Arrondit les bords si souhaité */
+    padding: 30px;
 }
 
 .daniel :first-child img,
@@ -135,7 +135,6 @@ main {
 }
 
 .jonathan{
-    height: 100%;
     color: White;
     background-color: #48556A;
 }
@@ -149,7 +148,6 @@ main {
 .kira{
     color: #48556A;
     background-color: white;
-    height: 100%;
 }
 
 @media only screen and (min-device-width : 768px){
@@ -168,8 +166,10 @@ main {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-row: 1fr 1fr;
-        gap: 20px;
+        gap: 10px;
     }
+
+ 
 
     .daniel{
         grid-column: span 2;
